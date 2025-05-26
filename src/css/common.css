@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  background-color: #222831;
+
+  font-family: "42dot Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #fffdf6;
+  overflow: hidden;
+}
+
+.Main {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 85vh;
+
+  padding: 3% 15%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5%;
+}

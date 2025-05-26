@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu_Recommend</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="icon"
+      href="./src/assets/token_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.png"
+    />
+  </head>
+  <body>
+    <div class="Main_head">
+      <span class="Main_head_title color_sty">점</span>
+      <span class="Main_head_title space_between">심</span>
+      <span class="Main_head_title color_sty">메</span>
+      <span class="Main_head_title space_between">뉴</span>
+      <span class="Main_head_title color_sty">추</span>
+      <span class="Main_head_title">천</span>
+    </div>
+
+    <div class="Main">
+      <div class="Main_filter">
+        <span class="Main_filter_title">필터</span>
+        <div class="Main_filter_type-1">
+          <span class="Main_filter_type-1_type">종류</span>
+          <div class="Main_filter_type-1_selectop">
+            <div class="div_selectop_gr1">
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="type_kr"
+                  name="type"
+                  value="kr"
+                  class="input_selectop"
+                />
+                <label for="grade2" class="lable_selectop">한식</label>
+              </div>
+
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="type_us"
+                  name="type"
+                  value="us"
+                  class="input_selectop"
+                />
+                <label for="grade3" class="lable_selectop">양식</label>
+              </div>
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="type_ch"
+                  name="type"
+                  value="ch"
+                  class="input_selectop"
+                />
+                <label for="grade1" class="lable_selectop">중식</label>
+              </div>
+            </div>
+            <div class="div_selectop_gr2">
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="type_jp"
+                  name="type"
+                  value="jp"
+                  class="input_selectop"
+                />
+                <label for="grade2" class="lable_selectop">일식</label>
+              </div>
+
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="type_ex"
+                  name="type"
+                  value="ex"
+                  class="input_selectop"
+                />
+                <label for="grade3" class="lable_selectop">분식</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Main_filter_type-1">
+          <span class="Main_filter_type-1_type">구분</span>
+          <div class="Main_filter_type-1_selectop">
+            <div class="div_selectop_gr1">
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="sep_soup"
+                  name="sep"
+                  value="1"
+                  class="input_selectop"
+                />
+                <label for="grade2" class="lable_selectop">국류</label>
+              </div>
+
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="sep_rice"
+                  name="sep"
+                  value="2"
+                  class="input_selectop"
+                />
+                <label for="grade2" class="lable_selectop">밥류</label>
+              </div>
+
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="sep_noddle"
+                  name="sep"
+                  value="3"
+                  class="input_selectop"
+                />
+                <label for="grade3" class="lable_selectop">면류</label>
+              </div>
+            </div>
+            <div class="div_selectop_gr2">
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="sep_fri"
+                  name="sep"
+                  value="4"
+                  class="input_selectop"
+                />
+                <label for="grade1" class="lable_selectop">튀김</label>
+              </div>
+
+              <div class="div_selectop_btn">
+                <input
+                  type="radio"
+                  id="sep_grill"
+                  name="sep"
+                  value="5"
+                  class="input_selectop"
+                />
+                <label for="grade3" class="lable_selectop">구이</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Main_filter_type-1">
+          <span class="Main_filter_type-1_type">가격</span>
+          <div class="Main_filter_type-2_selectop">
+            <span class="Main_filter_type-1_price a1">~</span>
+            <input type="number" name="price_max" id="price_max" />
+            <span class="Main_filter_type-1_price">원</span>
+          </div>
+        </div>
+
+        <div class="btn_div">
+          <button type="button" onclick="reset()" class="btn_reset">
+            <span class="btn_span2">초기화</span>
+          </button>
+          <button type="button" onclick="option()" class="btn_apply">
+            <span class="btn_span2">적용</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="Main_result">
+        <span class="Main_result_title">오늘의 점심 메뉴는?</span>
+        <div class="Main_result_value">
+          <span class="Main_result_value_unselect">NaN</span>
+          <span class="Main_result_value_select">음식 추천</span>
+          <span class="Main_result_value_unselect">NaN</span>
+        </div>
+        <button type="button" onclick="randomStart()" class="btn_start">
+          <span class="btn_span">시작</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

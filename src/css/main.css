@@ -1,0 +1,12 @@
+@import "./common.css";
+@import "./head.css";
+@import "./filter.css";
+@import "./result.css";
+
+/*요소 확인용 outline*/
+/* *{outline: 1px solid rgba(256, 0, 0, 0.2);} */
+
+/*요소 확인용 background-color*/
+/* .intro-reason-1{background-color: rgba(256, 0, 0, 0.2);}
+.intro-reason-2{background-color: rgba(0, 256, 0, 0.2);}
+.intro-reason-3{background-color: rgba(0, 0, 256, 0.2);} */
