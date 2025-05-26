@@ -1,0 +1,28 @@
+.Main_head {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 15vh;
+
+    border-top: 5%;
+    
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.Main_head_deco {
+    color: white;
+}
+
+.color_sty {
+  color: #6F8CFF;
+}
+
+.space_between {
+  margin-right: 1.2%;
+}
+
+.Main_head_title {
+    font-size: clamp(2px, 5vw, 70px);
+}
